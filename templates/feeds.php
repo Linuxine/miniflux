@@ -49,11 +49,11 @@
                             <?= t('never updated after creation') ?>
                         </span>
                     <?php endif ?>
-
+                    <?php if ($feed['parsing_error']): ?>
                     <span class="feed-parsing-error">
                             <?= t('(error occurred during the last check)') ?>
                     </span>
-
+                    <?php endif ?>
                 <?php endif ?>
             </h2>
             <ul class="item-menu">
